@@ -1,0 +1,33 @@
+# Jetson Object Detection - Requirements
+# For NVIDIA Jetson platforms with JetPack
+
+# Core dependencies
+numpy>=1.24.0
+opencv-python>=4.8.0
+
+# Deep learning (install via NVIDIA wheel for Jetson)
+# PyTorch: pip install torch --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v50
+# torchvision: pip install torchvision --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v50
+
+# TensorRT (usually pre-installed with JetPack)
+# tensorrt
+
+# ONNX Runtime (as fallback)
+onnxruntime-gpu>=1.15.0
+
+# PyCUDA for TensorRT
+pycuda>=2022.1
+
+# Model conversion
+ultralytics>=8.0.0
+onnx>=1.14.0
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# GStreamer bindings (for CSI cameras)
+# Install via: sudo apt-get install python3-gi
+
+# Testing
+pytest>=7.4.0
