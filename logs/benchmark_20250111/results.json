@@ -1,0 +1,29 @@
+{
+  "benchmark_date": "2025-01-11",
+  "model": "yolov8n",
+  "platforms": {
+    "jetson_orin_nano": {
+      "fps": 45,
+      "latency_ms": 22,
+      "memory_mb": 512,
+      "precision": "FP16",
+      "tensorrt_version": "8.6.1"
+    },
+    "jetson_nano_4gb": {
+      "fps": 18,
+      "latency_ms": 55,
+      "memory_mb": 890,
+      "precision": "FP16",
+      "tensorrt_version": "8.2.1"
+    },
+    "desktop_rtx3060": {
+      "fps": 142,
+      "latency_ms": 7,
+      "memory_mb": 1024,
+      "precision": "FP32",
+      "tensorrt_version": "8.6.1"
+    }
+  },
+  "test_images": 1000,
+  "input_size": [640, 640]
+}
